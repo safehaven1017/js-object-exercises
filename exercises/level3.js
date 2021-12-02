@@ -39,7 +39,11 @@ const exampleProductArray = [
  * @returns {number}
  */
 function level3exercise1(products) {
-
+  let sum = 0;
+  for (let i = 0; i < products.length; i++) {
+    sum += products[i].price;
+  }
+  return sum;
 }
 
 /**
@@ -49,7 +53,16 @@ function level3exercise1(products) {
  * @returns {string}
  */
 function level3exercise2(products) {
+  let highestPrice = 0;
+  let highestProduct = ''
 
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].price > highestPrice) {
+      highestPrice = products[i].price;
+      highestProduct = products[i].name;
+    }
+  }
+  return highestProduct;
 }
 
 /**
@@ -59,7 +72,16 @@ function level3exercise2(products) {
  * @returns {Product}
  */
 function level3exercise3(products) {
+  let lowestPrice = 99999;
+  let lowestProduct = ''
 
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].price < lowestPrice) {
+      lowestPrice = products[i].price;
+      lowestProduct = products[i].name;
+    }
+  }
+  return lowestProduct;
 }
 
 /**
@@ -69,6 +91,12 @@ function level3exercise3(products) {
  * @returns {number}
  */
 function level3exercise4(products) {
+  let sum = 0;
+  for (let i = 0; i < products.length; i++) {
+    sum += products[i].price;
+  }
+  let avg = sum/products.length;
+  return avg;
 
 }
 
@@ -80,7 +108,17 @@ function level3exercise4(products) {
  * @returns {string}
  */
 function level3exercise5(products) {
+  let lowestPrice = 99999;
+  let lowestProduct = '';
 
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].price < lowestPrice) {
+      lowestPrice = products[i].price;
+      lowestProduct = products[i].name;
+    }
+  }
+
+  return `${lowestProduct}: $${lowestPrice}`
 }
 
 /**
@@ -90,7 +128,15 @@ function level3exercise5(products) {
  * @returns {Product[]}
  */
 function level3exercise6(products) {
+  let inStock = [];
 
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].stock > 0) {
+      inStock.push(products[i]);
+    }
+  }
+
+  return inStock;
 }
 
 /**
@@ -101,7 +147,15 @@ function level3exercise6(products) {
  * @returns {Product[]}
  */
 function level3exercise7(products, color) {
+  let matchedItems = [];
 
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].color == color) {
+      matchedItems.push(products[i]);
+    }
+  }
+
+  return matchedItems;
 }
 
 /**
@@ -112,5 +166,5 @@ function level3exercise7(products, color) {
  * @returns {string}
  */
 function level3exercise8(products) {
-
+  
 }
