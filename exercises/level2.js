@@ -35,7 +35,7 @@ const user2 = {
  * @returns {string}
  */
 function level2exercise1(user) {
-
+  return user.security.password;
 }
 
 /**
@@ -45,7 +45,7 @@ function level2exercise1(user) {
  * @returns {string}
  */
 function level2exercise2(user) {
-
+  return `${user.name.first} ${user.name.last}`;
 }
 
 /**
@@ -55,7 +55,7 @@ function level2exercise2(user) {
  * @returns {string}
  */
 function level2exercise3(user) {
-
+  return `${user.name.first[0]}${user.name.last[0]}`;
 }
 
 /**
@@ -65,7 +65,10 @@ function level2exercise3(user) {
  * @returns {boolean}
  */
 function level2exercise4(user) {
-
+  if (user.security.password.length >= 8)
+    return true;
+  else
+    return false;
 }
 
 /**
@@ -75,5 +78,24 @@ function level2exercise4(user) {
  * @returns {boolean}
  */
 function level2exercise5(user) {
+  // const loginDate = '';
+  // const todaysDate = new Date();
 
+
+  // for (let i = 0; i < 4; i++) {
+  //   year += user.security.lastLogin[i];
+  // }
+  // for (let i = 5; i < 7; i++) {
+  //   month += user.security.lastLogin[i];
+  // }
+  // month -= 1;
+
+  // fp
+
+  // const setDate = new Date(year, month, day, 12);
+
+  // if (thisMonth == month) {
+  //   dayFlag = true;
+  // }
+  // if (year == thisYear &&)
 }

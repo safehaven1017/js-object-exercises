@@ -159,7 +159,7 @@ const level2 = [
   {
     title: 'Validating properties',
     desc: 'Use the object data to return true if the user has a password that is at least 8 characters long, otherwise return false',
-    callback: level2exercise5,
+    callback: level2exercise4,
     conditions: [
       [level2userA, true],
       [level2userB, true],
@@ -169,7 +169,7 @@ const level2 = [
   {
     title: 'Validating properties (part 2)',
     desc: 'Use the object data to return true if the has logged in in the last 30 days, otherwise return false',
-    callback: level2exercise4,
+    callback: level2exercise5,
     conditions: [
       [level2userA, true],
       [level2userB, false],
