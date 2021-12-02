@@ -108,7 +108,17 @@ function level3exercise4(products) {
  * @returns {string}
  */
 function level3exercise5(products) {
-  
+  let lowestPrice = 99999;
+  let lowestProduct = '';
+
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].price < lowestPrice) {
+      lowestPrice = products[i].price;
+      lowestProduct = products[i].name;
+    }
+  }
+
+  return `${lowestProduct}: $${lowestPrice}`
 }
 
 /**
@@ -118,7 +128,16 @@ function level3exercise5(products) {
  * @returns {Product[]}
  */
 function level3exercise6(products) {
-  return products.filter(product => product.stock > 0)
+  
+  let inStock = [];
+
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].stock > 0) {
+      inStock.push(products[i]);
+    }
+  }
+
+  return inStock;
 }
 
 /**
@@ -129,5 +148,14 @@ function level3exercise6(products) {
  * @returns {Product[]}
  */
 function level3exercise7(products, color) {
-  return products.filter(product => product.color === color)
+  
+  let matchedItems = [];
+
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].color == color) {
+      matchedItems.push(products[i]);
+    }
+  }
+
+  return matchedItems;
 }
