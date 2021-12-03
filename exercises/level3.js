@@ -48,9 +48,9 @@ function level3exercise1(products) {
 
 /**
  * Highest priced product
- * Use the products array to loop through the array and return the product with the highest price
+ * Use the products array to loop through the array and return the name of the product with the highest price
  * @param {Product[]} products
- * @returns {Product}
+ * @returns {string}
  */
 function level3exercise2(products) {
   let highestPrice = 0;
@@ -102,7 +102,7 @@ function level3exercise4(products) {
 
 /**
  * Format price and name
- * Use the products array to loop through the array and return an array of strings with the name and price of each product
+ * Use the products array to loop through the array and return the name and price of the product with the lowest price
  * e.g. iPhone: $499
  * @param {Product[]} products
  * @returns {string}
@@ -128,7 +128,6 @@ function level3exercise5(products) {
  * @returns {Product[]}
  */
 function level3exercise6(products) {
-  
   let inStock = [];
 
   for (let i = 0; i < products.length; i++) {
@@ -148,7 +147,6 @@ function level3exercise6(products) {
  * @returns {Product[]}
  */
 function level3exercise7(products, color) {
-  
   let matchedItems = [];
 
   for (let i = 0; i < products.length; i++) {
@@ -158,4 +156,15 @@ function level3exercise7(products, color) {
   }
 
   return matchedItems;
+}
+
+/**
+ * Format prices and names
+ * Use the products array to loop through the array and return an array of strings with the name and price of each product
+ * e.g. iPhone: $499
+ * @param {Product[]} products
+ * @returns {string}
+ */
+function level3exercise8(products) {
+  
 }

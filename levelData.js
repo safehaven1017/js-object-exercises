@@ -233,10 +233,10 @@ const level3 = [
   },
   {
     title: 'Highest priced product',
-    desc: 'Use the products array to loop through the array and return the product with the highest price',
+    desc: 'Use the products array to loop through the array and return the name of product with the highest price',
     callback: level3exercise2,
     conditions: [
-      { arguments: [products1], expected: 'iPhone' },
+      { arguments: [products1], expected: 'Samsung Galaxy S10' },
       { arguments: [products2], expected: 'Metallica T-Shirt' }
     ]
   },
@@ -245,7 +245,7 @@ const level3 = [
     desc: 'Use the products array to loop through the array and return the name of the product with the lowest price',
     callback: level3exercise3,
     conditions: [
-      { arguments: [products1], expected: 'Samsung Galaxy S10'},
+      { arguments: [products1], expected: 'Google Pixel 3' },
       { arguments: [products2], expected: 'Apple T-Shirt' }
     ]
   },
@@ -259,12 +259,12 @@ const level3 = [
     ]
   },
   {
-    title: 'Format price and name',
+    title: 'Format price and name of lowest priced product',
     desc: 'Use the products array to loop through the array and return the name and price of the product with the lowest price',
     callback: level3exercise5,
     conditions: [
-      { arguments: [products1], expected: 'Samsung Galaxy S10: $799' },
-      { arguments: [products2], expected: 'Apple T-Shirt: $15.99' }
+      { arguments: [products1], expected: 'Google Pixel 3: $599' },
+      { arguments: [products2], expected: 'Apple T-Shirt: $14.99' }
     ],
   },
   {
@@ -313,6 +313,15 @@ const level3 = [
         color: 'black',
         stock: 10
       }]}
+    ]
+  },
+  {
+    title: 'Format prices and names',
+    desc: 'Use the products array to loop through the array and return an array of strings with the name and price of each product',
+    callback: level3exercise8,
+    conditions: [
+      { arguments: [products1], expected: ['iPhone: $699', 'Samsung Galaxy S10: $799', 'Google Pixel 3: $599'] },
+      { arguments: [products2], expected: ['Metallica T-Shirt: $19.99', 'Google T-Shirt: $17.99', 'Apple T-Shirt: $14.99'] }
     ]
   },
 ]
