@@ -166,5 +166,15 @@ function level3exercise7(products, color) {
  * @returns {string}
  */
 function level3exercise8(products) {
+  let arr = []
+  let tempString = '';
   
+
+  for (let i = 0; i < products.length; i++) {
+    tempString = '';
+    tempString += products[i].name + ': $' + products[i].price;
+    arr.push(tempString);
+  }
+
+  return arr;
 }
